@@ -7,10 +7,12 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform target;
     
+    
     NavMeshAgent navMeshAgent;
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        
     }
 
     void Update()
