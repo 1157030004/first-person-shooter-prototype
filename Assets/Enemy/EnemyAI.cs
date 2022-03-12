@@ -11,24 +11,47 @@ public class EnemyAI : MonoBehaviour
     
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
+    bool isProvoked = false;
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        
     }
 
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
-        if(distanceToTarget <= chaseRange)
+        if(isProvoked)
         {
-        navMeshAgent.SetDestination(target.position);
+            EngageTarget();
+        }
+        else if(distanceToTarget <= chaseRange)
+        {
+            isProvoked = true;
         }
     }
 
-    /// <summary>
-    /// Callback to draw gizmos only if the object is selected.
-    /// </summary>
+    void EngageTarget()
+    {
+        if(distanceToTarget >= navMeshAgent.stoppingDistance)
+        {
+            ChaseTarget();
+        }
+        if(distanceToTarget <= navMeshAgent.stoppingDistance)
+        {
+            AttackTarget();
+        }
+    }
+
+    void ChaseTarget()
+    {
+        navMeshAgent.SetDestination(target.position);
+    }
+
+    void AttackTarget()
+    {
+        Debug.Log(name + " attacks " + target.name);
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
