@@ -26,6 +26,13 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    
+    /// <summary>
+    /// Callback to draw gizmos only if the object is selected.
+    /// </summary>
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
 
 }
