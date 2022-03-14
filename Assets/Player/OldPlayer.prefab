@@ -865,7 +865,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1000
+      scalar: 1
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4973,6 +4973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969d92a373657b245982ec6a3251ccd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
 --- !u!1 &4587395071150492638
 GameObject:
   m_ObjectHideFlags: 0
@@ -5284,6 +5285,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 3858228663737115134}
   range: 100
-  damage: 25
+  damage: 1
   muzzleFlash: {fileID: 8289632607018788601}
   hitEffect: {fileID: 125598766518317953, guid: 0a1306291dd57624fa8ce835148f5f73, type: 3}
