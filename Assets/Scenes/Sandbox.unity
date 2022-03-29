@@ -2020,10 +2020,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4479077044564329490, guid: c20c97e026f1873449e6d9008db208df, type: 3}
+      propertyPath: currentWeapon
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4535918937136386119, guid: c20c97e026f1873449e6d9008db208df, type: 3}
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 454965251}
+    - target: {fileID: 5113603300992267436, guid: c20c97e026f1873449e6d9008db208df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5113603300992584906, guid: c20c97e026f1873449e6d9008db208df, type: 3}
       propertyPath: m_RootOrder
       value: 1
