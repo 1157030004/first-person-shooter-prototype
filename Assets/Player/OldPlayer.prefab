@@ -534,6 +534,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 5556966674512438325}
+    - target: {fileID: 6188825336902106005, guid: 8182220642249fb41b491212b610bd57, type: 3}
+      propertyPath: ammoType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8182220642249fb41b491212b610bd57, type: 3}
 --- !u!1 &5113603300992267436 stripped
